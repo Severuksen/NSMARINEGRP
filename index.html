@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NSMARINEGRP</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/fuentes.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/owl/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/header.css">
+	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+	<script type="application/ecmascript" src="js/jquery-1.12.4.js"></script>
+	<script type="application/ecmascript" src="js/owl.carousel.min.js"></script>
+	<style>
+		.sub-menu {
+			position: absolute;
+    		left: 0;
+    		visibility: hidden;
+    		opacity: 0;
+    		z-index: 1;
+   			transition: opacity .2s ease-in;
+		}
+		.header-opciones li:hover> .sub-menu{
+			visibility: visible;
+			opacity: 1;
+		}
+		.header-opciones .sub-menu li {
+			float: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    cursor: pointer;
+		}
+		.header-opciones .sub-menu li a {
+			padding-top: 7px;
+padding-bottom: 7px;
+color: #333333;
+font-weight: 400;
+font-size: 16px;
+		}
+		.header-opciones .sub-menu{
+			background-color: #f2efef;
+    		width: 200px;
+   			border-top: 3px solid #ed6a2b;
+   			font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.06);
+    -webkit-box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.06);
+    -moz-box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.06);
+			line-height: 1.7;
+			letter-spacing: 0.3px;
+		}
+		.header-opciones ul{
+			list-style: none;
+		}
+		.header-opciones .sub-menu li a {
+			padding-top: 7px;
+			padding-bottom: 7px;
+		}
+		.header-opciones .sub-menu a{
+			border: 0;
+			padding: 7px 20px;
+			line-height: 19px;
+			text-indent: 0;
+			height: auto;
+			transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out,height 0s,line-height 0s;
+		}
+		.header-opciones ul a {
+			display: block;
+			box-sizing: content-box;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="header-capa-1">
+			<div class="header-registro-login">
+				<div class="header-capa-2">
+					<nav class="header-opciones-login">
+						<ul>
+							<li><a href="login.html">ACCESO A CLIENTES</a></li>
+							<li><a>REGISTRARSE</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+			<div class="header-menu">
+				<div class="header-capa-2">
+					<nav class="header-opciones">
+						<ul>
+							<li><a><span>INICIO</span></a></li>
+							<li><a><span>NOSOTROS</span></a>
+								<ul class="sub-menu">
+									<li class="sub-menu-opciones sub-menu-desplegable"><a>OPCION 1</a></li>
+									<li class="sub-menu-opciones sub-menu-desplegable"><a>OPCION 2</a></li>
+									<li class="sub-menu-opciones sub-menu-desplegable"><a>OPCION 3</a></li>
+									<li class="sub-menu-opciones sub-menu-desplegable"><a>OPCION 4</a></li>
+								</ul>
+							</li>
+							<li><a><span>SERVICIOS</span></a></li>
+							<li><img id="medio" src="imagenes/Imagen N&S.png" height="97.4px" width="124.015px"></li>
+							<li><a><span></span></a></li>
+							<li><a><span>FORMACIÓN</span></a></li>
+							<li><a id="final"><span>CONTACTO</span></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div id="main-slider" class="owl-carousel owl-theme owl-dots">
+			<div class="item">
+				<div class="main-mensaje-banner">
+					<div class="main-mensaje">SOMOS EXPERTOS EN INSPECCIONES MARINAS, AUDITORÍAS INTERNAS Y CONSULTORÍA</div>
+					<div class="main-mensaje main-mensaje-dos">Brindamos servicios de Inspecciones Marinas, auditorías internas, consultoría, y entrenamiento profesional.</div>
+					<div class="main-mensaje-boton-posicion">
+						<input class="main-mensaje-boton" type="button" value="SERVICIOS">
+					</div>
+					<img alt="" src="imagenes/centro1.jpg" width="100%" height="500">
+				</div>
+			</div>
+			<div class="item">
+				<div class="main-mensaje">ASESORAMIENTO EN IMPORTACIÓN</div>
+				<div class="main-mensaje main-mensaje-dos main-mensaje-tres">Consultoría para empresas importadoras, exportadoras y operadores de comercio exterior en todos los temas relacionados.</div>
+				<div class="main-mensaje-boton-posicion">
+					<input class="main-mensaje-boton" type="button" value="CONSULTORÍA">
+				</div>
+				<img alt="" src="imagenes/centro2.jpg" width="100%" height="500">
+			</div>
+			<div class="item">
+				<div class="main-mensaje">TU IMPORTACIÓN EN LAS MEJORES MANOS</div>
+				<div class="main-mensaje main-mensaje-dos main-mensaje-tres">Años de experiencia y profesionales altamente cualificados trabajando día a día para aportar las mejores soluciones logísticas.</div>
+				<div class="main-mensaje-boton-posicion">
+					<input class="main-mensaje-boton" type="button" value="QUIÉNES SOMOS">
+				</div>
+				<img alt="" src="imagenes/centro3.jpg" width="100%" height="500">
+			</div>
+			<!--<div class="item"></div>-->
+        </div>
+        <div class="eslogan">
+        	<div class="item"><div class="eslogan-mensaje">ESLOGAN1</div></div>
+        	<div class="item"><div class="eslogan-mensaje">ESLOGAN2</div></div>
+        	<div class="item"><div class="eslogan-mensaje">ESLOGAN3</div></div>
+        	<div class="item"><div class="eslogan-mensaje">ESLOGAN4</div></div>
+        </div>
+        <div class="main-servicios">
+        	<div class="main-servicios-margen">
+        		<h2>SERVICIOS</h2>
+        		<h3>Con una dilatada experiencia, prestamos servicios de logística integral y forwarding,<br>
+en transporte terrestre, marítimo, aéreo y representación en la aduana.</h3>
+        		<div class="main-linea"></div>
+        		<div class="cuadros-contenedor">
+        			<div class="cuadros-contenedor-margen">
+        				<div class="cuadros-servicios"><img src="imagenes/consultoría.png" width="185px" height="222px"></div>
+        				<div class="cuadros-servicios"><img src="imagenes/auditoría.png" width="185px" height="222px"></div>
+        				<!---<div class="cuadros-servicios"><img src="imagenes/importación.png" width="185px" height="222px"></div>-->
+        				<div class="cuadros-servicios"><img src="imagenes/inspecciones.png" width="185px" height="222px"></div>
+        			</div>
+        		</div>
+        	</div>
+		</div>
+	</main>
+	<footer>
+		<script type="application/ecmascript" src="js/funciones.js"></script>
+	</footer>
+</body>
+
+</html>

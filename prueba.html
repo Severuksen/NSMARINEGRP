@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NSMARINEPRG</title>
+	<meta charset="UTF-8">
+<style>
+#header-sesion-cuadro-margin {margin: 50px; width: 100%; color: black;}
+				#header-sesion-cuadro-margin h2 {font-size: 15px;}
+					#header-sesion-cuadro-usuario, #header-sesion-cuadro-clave {width: 45%; display: block; height: 100%; float: left;}
+					#header-sesion-cuadro-usuario {border-right: 1px dotted rgba(2,2,2,0.78);}
+					#header-sesion-cuadro-usuario input {display: block; height: 68px; padding: 0 59px 0 15px; margin-bottom: 3px; border: 1px solid #dedede; font-weight: normal;}
+					#header-sesion-cuadro-usuario input#Entrar, #header-sesion-cuadro-clave input#codeval-btn {padding: 0; margin-top: 20px; font-size: 14px; font-weight: 700; width: 218px; height: 68px; background-color: red; color: white; transition: color 0.5s, background-color 0.5s;}
+					#header-sesion-cuadro-clave {margin-left: 25px;}
+					#header-sesion-cuadro-clave h4 {font-weight: normal;}
+					#header-sesion-cuadro-clave input {display: block; height: 68px; padding: 0 15px 0 15px; margin-bottom: 3px; border: 1px solid #dedede; font-weight: normal;}
+					#header-sesion-cuadro-clave input#codeval-btn {width: 235px;}
+					#header-sesion-cuadro-usuario input#Entrar:hover, #header-sesion-cuadro-clave input#codeval-btn:hover {color: red; background-color: white; border: 2px solid red; cursor: pointer; transition: color 0.5s, background-color 0.5s;}
+			.header-sesion-cuadro:hover, #header-sesion:hover+.header-sesion-cuadro{display: block; color: white;}
+
+</style>
+</head>
+<body>
+<div id="header-sesion-cuadro" class="header-sesion-cuadro">
+				<div id="header-sesion-cuadro-margin">
+					<div id="header-sesion-cuadro-usuario">
+						  <h2>Clientes registrados</h2>
+						  <form method="POST" onSubmit="return validaringreso();">
+								<input type="text" id="usuario" name="usuario" placeholder="USUARIO" autocomplete="off">
+								<input type="password" id="clave" name="clave" placeholder="CLAVE" autocomplete="off">
+								<input class="boton-rojo carandache" type="submit" value="Entrar" id="Entrar">
+						  </form>
+					</div>
+					<div id="header-sesion-cuadro-clave">
+						<h2>¿OLVIDASTE TU CONTRASEÑA?</h2>
+						<h4>Recupera tu codigo de validacion ingresando tu cuenta de correo electronico o tu Usuario.</h4>
+						<form method="POST" onSubmit="return validarcodeval();">
+							<input name="email" id="emailcodeval" placeholder="CORREO ELECTRÓNICO" value="" type="email" size="30">
+							<input class="carandache boton-rojo" type="submit" id="codeval-btn" value="RECUPERAR CÓDIGO">
+						</form>
+					</div>
+				</div>
+           	</div>
+</body>
+</html>
